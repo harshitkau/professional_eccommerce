@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:prof_ecommerce/common/widgets/brands/brand_card.dart';
 import 'package:prof_ecommerce/common/widgets/custom_shapes/containers/circular_container.dart';
 import 'package:prof_ecommerce/utils/constants/colors.dart';
-// ignore: unused_import
-import 'package:prof_ecommerce/utils/constants/image_strings.dart';
 import 'package:prof_ecommerce/utils/constants/sizes.dart';
 import 'package:prof_ecommerce/utils/helpers/helper_functions.dart';
 

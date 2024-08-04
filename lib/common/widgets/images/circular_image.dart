@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:prof_ecommerce/utils/constants/colors.dart';
-import 'package:prof_ecommerce/utils/constants/image_strings.dart';
 import 'package:prof_ecommerce/utils/constants/sizes.dart';
 import 'package:prof_ecommerce/utils/helpers/helper_functions.dart';
 

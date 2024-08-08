@@ -1,9 +1,10 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:prof_ecommerce/features/personalization/screens/settings/settings.dart';
 import 'package:prof_ecommerce/features/shop/screens/home/home.dart';
 import 'package:prof_ecommerce/features/shop/screens/store/store.dart';
+import 'package:prof_ecommerce/features/shop/screens/wishlist/wishlist.dart';
 import 'package:prof_ecommerce/utils/constants/colors.dart';
 import 'package:prof_ecommerce/utils/helpers/helper_functions.dart';
 
@@ -27,7 +28,7 @@ class NavigationMenu extends StatelessWidget {
           indicatorColor: darkMode
               ? TColors.white.withOpacity(0.1)
               : Colors.black.withOpacity(0.1),
-          destinations: [
+          destinations: const [
             NavigationDestination(icon: Icon(Iconsax.home), label: 'Home'),
             NavigationDestination(icon: Icon(Iconsax.shop), label: 'Store'),
             NavigationDestination(icon: Icon(Iconsax.heart), label: 'Wishlist'),
@@ -44,9 +45,9 @@ class NavigationController extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
 
   final screens = [
-    HomeScreen(),
-    Store(),
-    Container(color: Colors.yellow),
-    Container(color: Colors.blue),
+    const HomeScreen(),
+    const Store(),
+    const FavoriteScreen(),
+    const SettingsScreen(),
   ];
 }

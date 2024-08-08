@@ -49,8 +49,8 @@ class TLoginForm extends StatelessWidget {
                   ],
                 ),
                 TextButton(
-                    onPressed: () => Get.to(() => ForgetPassword()),
-                    child: Text(TTexts.forgetPassword))
+                    onPressed: () => Get.to(() => const ForgetPassword()),
+                    child: const Text(TTexts.forgetPassword))
               ],
             ),
 
@@ -60,9 +60,9 @@ class TLoginForm extends StatelessWidget {
               width: double.infinity,
               child: ElevatedButton(
                   onPressed: () {
-                    Get.to(() => NavigationMenu());
+                    Get.to(() => const NavigationMenu());
                   },
-                  child: Text(TTexts.signIn)),
+                  child: const Text(TTexts.signIn)),
             ),
             const SizedBox(height: TSizes.spaceBtwItems),
             // create account button
@@ -70,9 +70,9 @@ class TLoginForm extends StatelessWidget {
               width: double.infinity,
               child: OutlinedButton(
                   onPressed: () {
-                    Get.to(() => SignUpScreen());
+                    Get.to(() => const SignUpScreen());
                   },
-                  child: Text(TTexts.createAccount)),
+                  child: const Text(TTexts.createAccount)),
             ),
             // const SizedBox(height: TSizes.spaceBtwSections / 2),
           ],

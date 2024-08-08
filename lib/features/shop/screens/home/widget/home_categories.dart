@@ -12,21 +12,21 @@ class THomeCategories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: TSizes.defaultSpace),
+      padding: const EdgeInsets.only(left: TSizes.defaultSpace),
       child: Column(
         children: [
-          TSectionHeading(
+          const TSectionHeading(
             title: 'Popular Categories',
             showActionButton: false,
             textColor: Colors.white,
           ),
-          SizedBox(height: TSizes.spaceBtwItems),
+          const SizedBox(height: TSizes.spaceBtwItems),
 
           // scollable categories
           SizedBox(
             height: 80,
             child: ListView.builder(
-              physics: BouncingScrollPhysics(),
+              physics: const BouncingScrollPhysics(),
               shrinkWrap: true,
               itemCount: 6,
               scrollDirection: Axis.horizontal,

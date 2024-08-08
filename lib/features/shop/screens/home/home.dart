@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            TPrimaryHeaderContainer(
+            const TPrimaryHeaderContainer(
               child: Column(
                 children: [
                   SizedBox(height: 10),
@@ -32,6 +32,9 @@ class HomeScreen extends StatelessWidget {
                   SizedBox(height: TSizes.spaceBtwSections),
                   // Categories
                   THomeCategories(),
+                  SizedBox(
+                    height: TSizes.spaceBtwSections,
+                  )
                 ],
               ),
             ),

@@ -22,7 +22,7 @@ class BrandCard extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: TRoundedContainer(
-        padding: EdgeInsets.all(TSizes.sm),
+        padding: const EdgeInsets.all(TSizes.sm),
         showBorder: showBorder,
         backgroundColor: Colors.transparent,
         child: Row(
@@ -39,7 +39,7 @@ class BrandCard extends StatelessWidget {
               ),
             ),
 
-            SizedBox(width: TSizes.spaceBtwItems / 4),
+            const SizedBox(width: TSizes.spaceBtwItems / 4),
             Expanded(
               child: Column(
                 mainAxisSize: MainAxisSize.min,

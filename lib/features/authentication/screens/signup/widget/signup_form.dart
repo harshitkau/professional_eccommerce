@@ -68,16 +68,16 @@ class TSignUpForm extends StatelessWidget {
                 suffixIcon: Icon(Iconsax.eye_slash))),
         const SizedBox(height: TSizes.spaceBtwItems),
         // terms & condition checkboxes
-        TermAndConditionCheckbox(),
-        SizedBox(height: TSizes.spaceBtwSections),
+        const TermAndConditionCheckbox(),
+        const SizedBox(height: TSizes.spaceBtwSections),
         // signup button
         SizedBox(
           width: double.infinity,
           child: ElevatedButton(
             onPressed: () {
-              Get.to(() => VerifyEmailScreen());
+              Get.to(() => const VerifyEmailScreen());
             },
-            child: Text(TTexts.createAccount),
+            child: const Text(TTexts.createAccount),
           ),
         )
       ],

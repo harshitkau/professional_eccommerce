@@ -14,17 +14,17 @@ class ResetPassword extends StatelessWidget {
         appBar: AppBar(
           automaticallyImplyLeading: false,
           actions: [
-            IconButton(onPressed: () {}, icon: Icon(CupertinoIcons.clear))
+            IconButton(onPressed: () {}, icon: const Icon(CupertinoIcons.clear))
           ],
         ),
         body: SingleChildScrollView(
           child: Padding(
-            padding: EdgeInsets.all(TSizes.defaultSpace),
+            padding: const EdgeInsets.all(TSizes.defaultSpace),
             child: Column(
               children: [
                 // images
                 Image(
-                    image: AssetImage(TImages.deliveredEmailIllustration),
+                    image: const AssetImage(TImages.deliveredEmailIllustration),
                     width: THelperFunctions.screenWidth() * 0.6),
 
                 const SizedBox(height: TSizes.spaceBtwSections),
@@ -44,7 +44,7 @@ class ResetPassword extends StatelessWidget {
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: () {},
-                    child: Text(TTexts.done),
+                    child: const Text(TTexts.done),
                   ),
                 ),
                 const SizedBox(height: TSizes.spaceBtwItems),
@@ -52,7 +52,7 @@ class ResetPassword extends StatelessWidget {
                   width: double.infinity,
                   child: TextButton(
                     onPressed: () {},
-                    child: Text(TTexts.resendEmail),
+                    child: const Text(TTexts.resendEmail),
                   ),
                 ),
               ],

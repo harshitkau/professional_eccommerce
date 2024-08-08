@@ -47,7 +47,7 @@ class TPromoSlider extends StatelessWidget {
                           controller.carouselCurrentIndex.value == i
                               ? TColors.primary
                               : TColors.grey,
-                      margin: EdgeInsets.only(right: 8),
+                      margin: const EdgeInsets.only(right: 8),
                     )
                 ],
               )),

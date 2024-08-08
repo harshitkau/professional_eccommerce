@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:prof_ecommerce/common/widgets/appbar/appbar.dart';
 import 'package:prof_ecommerce/common/widgets/appbar/tabbar.dart';
 import 'package:prof_ecommerce/common/widgets/brands/brand_card.dart';
@@ -44,20 +42,20 @@ class Store extends StatelessWidget {
                         : TColors.white,
                     expandedHeight: 440,
                     flexibleSpace: Padding(
-                      padding: EdgeInsets.all(TSizes.defaultSpace),
+                      padding: const EdgeInsets.all(TSizes.defaultSpace),
                       child: ListView(
                         shrinkWrap: true,
                         physics: const NeverScrollableScrollPhysics(),
                         children: [
                           // search bar
-                          SizedBox(height: TSizes.spaceBtwItems),
-                          TSearchContainer(
+                          const SizedBox(height: TSizes.spaceBtwItems),
+                          const TSearchContainer(
                             text: 'Search in Store',
                             showBorder: true,
                             showBackground: false,
                             padding: EdgeInsets.zero,
                           ),
-                          SizedBox(height: TSizes.spaceBtwSections),
+                          const SizedBox(height: TSizes.spaceBtwSections),
 
                           // features brand
                           TSectionHeading(
@@ -72,7 +70,7 @@ class Store extends StatelessWidget {
                             mainAxisExtent: 80,
                             itemCount: 4,
                             itemBuilder: (_, index) {
-                              return BrandCard(
+                              return const BrandCard(
                                 showBorder: false,
                               );
                             },

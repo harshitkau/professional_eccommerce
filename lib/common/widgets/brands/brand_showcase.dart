@@ -16,15 +16,15 @@ class TBrandShowcaseCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TRoundedContainer(
-      padding: EdgeInsets.all(TSizes.md),
+      padding: const EdgeInsets.all(TSizes.md),
       showBorder: true,
       borderColor: TColors.darkGrey,
       backgroundColor: Colors.transparent,
-      margin: EdgeInsets.only(bottom: TSizes.spaceBtwItems),
+      margin: const EdgeInsets.only(bottom: TSizes.spaceBtwItems),
       child: Column(
         children: [
           // brand with products count
-          BrandCard(showBorder: false),
+          const BrandCard(showBorder: false),
 
           // brand with 3 product items
           Row(
@@ -44,8 +44,8 @@ class TBrandShowcaseCard extends StatelessWidget {
         backgroundColor: THelperFunctions.isDarkMode(context)
             ? TColors.darkGrey
             : TColors.light,
-        margin: EdgeInsets.only(right: TSizes.sm),
-        padding: EdgeInsets.all(TSizes.md),
+        margin: const EdgeInsets.only(right: TSizes.sm),
+        padding: const EdgeInsets.all(TSizes.md),
         child: Image(
           image: AssetImage(image),
           fit: BoxFit.contain,

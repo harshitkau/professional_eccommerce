@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:prof_ecommerce/utils/constants/colors.dart';
+import 'package:prof_ecommerce/utils/constants/sizes.dart';
 import 'package:prof_ecommerce/utils/helpers/helper_functions.dart';
 
-class TCircularButton extends StatelessWidget {
-  const TCircularButton({
+class TCircularIcon extends StatelessWidget {
+  const TCircularIcon({
     super.key,
     required this.icon,
     this.width,
     this.height,
-    this.size,
+    this.size = TSizes.lg,
     this.color,
     this.backgroundcolor,
     this.onPressed,

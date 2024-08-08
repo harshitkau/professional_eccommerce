@@ -6,7 +6,7 @@ import 'package:prof_ecommerce/utils/device/device_utility.dart';
 import 'package:prof_ecommerce/utils/helpers/helper_functions.dart';
 
 class TSearchContainer extends StatelessWidget {
-  TSearchContainer({
+  const TSearchContainer({
     super.key,
     required this.text,
     this.icon = Iconsax.search_normal,
@@ -31,7 +31,7 @@ class TSearchContainer extends StatelessWidget {
         padding: padding,
         child: Container(
           width: TDeviceUtils.getScreenWidth(context),
-          padding: EdgeInsets.all(TSizes.md),
+          padding: const EdgeInsets.all(TSizes.md),
           decoration: BoxDecoration(
               color: showBackground
                   ? dark
@@ -46,7 +46,7 @@ class TSearchContainer extends StatelessWidget {
                 icon,
                 color: TColors.darkerGrey,
               ),
-              SizedBox(width: TSizes.spaceBtwItems),
+              const SizedBox(width: TSizes.spaceBtwItems),
               Text(
                 text,
                 style: Theme.of(context).textTheme.bodySmall,

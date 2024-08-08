@@ -16,7 +16,7 @@ class CategoryTab extends StatelessWidget {
       physics: const NeverScrollableScrollPhysics(),
       children: [
         Padding(
-          padding: EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(TSizes.defaultSpace),
           child: Column(
             children: [
               // brands
@@ -43,7 +43,7 @@ class CategoryTab extends StatelessWidget {
               GridLayout(
                   itemCount: 4,
                   itemBuilder: (_, context) {
-                    return TProductCardVertical();
+                    return const TProductCardVertical();
                   }),
 
               const SizedBox(height: TSizes.spaceBtwSections),

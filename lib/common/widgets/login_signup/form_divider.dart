@@ -3,7 +3,7 @@ import 'package:prof_ecommerce/utils/constants/colors.dart';
 import 'package:prof_ecommerce/utils/helpers/helper_functions.dart';
 
 class TLoginDivider extends StatelessWidget {
-  TLoginDivider({
+  const TLoginDivider({
     super.key,
     required this.dividertext,
   });

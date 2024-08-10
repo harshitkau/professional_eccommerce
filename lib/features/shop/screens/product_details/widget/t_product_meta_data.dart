@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:prof_ecommerce/common/widgets/custom_shapes/containers/circular_container.dart';
+import 'package:prof_ecommerce/common/widgets/images/circular_image.dart';
 import 'package:prof_ecommerce/common/widgets/products/cart/product_price_text.dart';
 import 'package:prof_ecommerce/common/widgets/texts/product_title_text.dart';
 import 'package:prof_ecommerce/common/widgets/texts/t_brand_title_text_with_verified_icon.dart';
 import 'package:prof_ecommerce/utils/constants/colors.dart';
 import 'package:prof_ecommerce/utils/constants/enums.dart';
+import 'package:prof_ecommerce/utils/constants/image_strings.dart';
 import 'package:prof_ecommerce/utils/constants/sizes.dart';
-// import 'package:prof_ecommerce/utils/helpers/helper_functions.dart';
+import 'package:prof_ecommerce/utils/helpers/helper_functions.dart';
 
 class TProductMetaData extends StatelessWidget {
   const TProductMetaData({super.key});
 
   @override
   Widget build(BuildContext context) {
-    // final dark = THelperFunctions.isDarkMode(context);
+    final dark = THelperFunctions.isDarkMode(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -65,9 +67,19 @@ class TProductMetaData extends StatelessWidget {
 
         // brand name
 
-        TBranchTitleWithVerifiedIcon(
-          title: 'Nike',
-          brandTextSizes: TextSizes.medium,
+        Row(
+          children: [
+            TCircularImage(
+              overLayColor: dark ? TColors.white : TColors.black,
+              height: 32,
+              width: 32,
+              image: TImages.nikeLogo,
+            ),
+            TBranchTitleWithVerifiedIcon(
+              title: 'Nike',
+              brandTextSizes: TextSizes.medium,
+            ),
+          ],
         ),
       ],
     );

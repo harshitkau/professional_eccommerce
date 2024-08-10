@@ -1,15 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:prof_ecommerce/common/widgets/appbar/appbar.dart';
-import 'package:prof_ecommerce/common/widgets/icons/t_circular_icon.dart';
 import 'package:prof_ecommerce/common/widgets/products/cart/product_price_text.dart';
 import 'package:prof_ecommerce/common/widgets/products/cart/t_cart_item.dart';
 import 'package:prof_ecommerce/common/widgets/products/cart/product_add_remove.dart';
-import 'package:prof_ecommerce/utils/constants/colors.dart';
 import 'package:prof_ecommerce/utils/constants/sizes.dart';
-import 'package:prof_ecommerce/utils/helpers/helper_functions.dart';
 
 class CartScreen extends StatelessWidget {
   const CartScreen({super.key});

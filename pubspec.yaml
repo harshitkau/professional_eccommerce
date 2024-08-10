@@ -45,6 +45,8 @@ dependencies:
 
   # product specific
   readmore: 
+  flutter_rating_bar: 
+
   
 
 dev_dependencies:

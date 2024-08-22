@@ -107,6 +107,7 @@ class TProductCardVertical extends StatelessWidget {
                     isLarge: true,
                   ),
                 ),
+                // add to cart
                 Container(
                   decoration: const BoxDecoration(
                       color: TColors.dark,

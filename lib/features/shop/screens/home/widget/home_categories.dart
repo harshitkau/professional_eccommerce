@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:prof_ecommerce/common/widgets/image_text_widget/vertical_image_text.dart';
 import 'package:prof_ecommerce/common/widgets/texts/section_heading.dart';
-import 'package:prof_ecommerce/features/shop/sub_category/sub_category.dart';
+import 'package:prof_ecommerce/features/shop/screens/sub_category/sub_category.dart';
 import 'package:prof_ecommerce/utils/constants/image_strings.dart';
 import 'package:prof_ecommerce/utils/constants/sizes.dart';
 

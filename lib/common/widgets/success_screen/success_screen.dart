@@ -1,19 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:prof_ecommerce/common/styles/spacing_style.dart';
+import 'package:prof_ecommerce/common/widgets/loaders/animation_loader.dart';
+import 'package:prof_ecommerce/utils/constants/image_strings.dart';
 import 'package:prof_ecommerce/utils/constants/sizes.dart';
 import 'package:prof_ecommerce/utils/constants/text_strings.dart';
 import 'package:prof_ecommerce/utils/helpers/helper_functions.dart';
 
 class SuccessScreen extends StatelessWidget {
-  const SuccessScreen(
-      {super.key,
-      required this.image,
-      required this.title,
-      required this.subTitle,
-      required this.onPressed});
+  const SuccessScreen({
+    super.key,
+    required this.image,
+    required this.title,
+    required this.subTitle,
+    required this.onPressed,
+    this.isAnimation = false,
+  });
 
   final String image, title, subTitle;
   final VoidCallback onPressed;
+  final bool? isAnimation;
 
   @override
   Widget build(BuildContext context) {
@@ -24,9 +30,12 @@ class SuccessScreen extends StatelessWidget {
           child: Column(
             children: [
               // images
-              Image(
-                  image: AssetImage(image),
-                  width: THelperFunctions.screenWidth() * 0.6),
+              isAnimation == false
+                  ? Image(
+                      image: AssetImage(image),
+                      width: THelperFunctions.screenWidth() * 0.6)
+                  : Lottie.asset(TImages.successfullyRegistrationAnimation,
+                      width: MediaQuery.of(context).size.width * 0.8),
 
               const SizedBox(height: TSizes.spaceBtwSections),
 // titie and subtitle

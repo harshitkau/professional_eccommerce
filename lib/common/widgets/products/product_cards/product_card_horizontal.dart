@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:prof_ecommerce/common/styles/shadow.dart';
 import 'package:prof_ecommerce/common/widgets/custom_shapes/containers/circular_container.dart';
 import 'package:prof_ecommerce/common/widgets/icons/t_circular_icon.dart';
 import 'package:prof_ecommerce/common/widgets/images/rounded_image.dart';

@@ -21,20 +21,20 @@ class TCartItem extends StatelessWidget {
           imageUrl: TImages.productImage1,
           width: 60,
           height: 60,
-          padding: EdgeInsets.all(TSizes.sm),
+          padding: const EdgeInsets.all(TSizes.sm),
           backgroundColor: THelperFunctions.isDarkMode(context)
               ? TColors.darkerGrey
               : TColors.light,
         ),
-        SizedBox(width: TSizes.spaceBtwItems),
+        const SizedBox(width: TSizes.spaceBtwItems),
         // title, price & size
         Expanded(
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              TBranchTitleWithVerifiedIcon(title: 'Nike'),
-              Flexible(
+              const TBranchTitleWithVerifiedIcon(title: 'Nike'),
+              const Flexible(
                 child:
                     TProductTitleText(title: 'Black Sports Shoes', maxLines: 1),
               ),

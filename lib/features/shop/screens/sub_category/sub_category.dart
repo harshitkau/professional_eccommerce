@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:prof_ecommerce/common/widgets/appbar/appbar.dart';
 import 'package:prof_ecommerce/common/widgets/images/rounded_image.dart';
 import 'package:prof_ecommerce/common/widgets/products/product_cards/product_card_horizontal.dart';
@@ -14,19 +12,19 @@ class SubCategory extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: TAppBar(title: Text('Sports Shirts'), showBackArrow: true),
+      appBar: const TAppBar(title: Text('Sports Shirts'), showBackArrow: true),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(TSizes.defaultSpace),
           child: Column(
             children: [
-              TRoundedImage(
+              const TRoundedImage(
                 imageUrl: TImages.promoBanner1,
                 width: double.infinity,
                 height: null,
                 applyImageRadius: true,
               ),
-              SizedBox(height: TSizes.spaceBtwSections),
+              const SizedBox(height: TSizes.spaceBtwSections),
 
               // sub-category
               Column(
@@ -45,7 +43,7 @@ class SubCategory extends StatelessWidget {
                       itemCount: 4,
                       scrollDirection: Axis.horizontal,
                       separatorBuilder: (_, __) =>
-                          SizedBox(width: TSizes.spaceBtwItems),
+                          const SizedBox(width: TSizes.spaceBtwItems),
                       itemBuilder: (_, index) => const TProductCardHorizontal(),
                     ),
                   ),

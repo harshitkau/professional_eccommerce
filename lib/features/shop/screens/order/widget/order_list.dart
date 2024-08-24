@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:prof_ecommerce/common/widgets/custom_shapes/containers/circular_container.dart';
 import 'package:prof_ecommerce/utils/constants/colors.dart';
@@ -15,8 +13,8 @@ class OrderList extends StatelessWidget {
     final dark = THelperFunctions.isDarkMode(context);
     return ListView.separated(
       shrinkWrap: true,
-      physics: BouncingScrollPhysics(),
-      separatorBuilder: (_, __) => SizedBox(
+      physics: const BouncingScrollPhysics(),
+      separatorBuilder: (_, __) => const SizedBox(
         height: TSizes.spaceBtwItems,
       ),
       itemCount: 4,
@@ -30,8 +28,8 @@ class OrderList extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Icon(Iconsax.ship),
-                  SizedBox(width: TSizes.spaceBtwItems / 2),
+                  const Icon(Iconsax.ship),
+                  const SizedBox(width: TSizes.spaceBtwItems / 2),
 
                   // status date
                   Expanded(
@@ -54,14 +52,14 @@ class OrderList extends StatelessWidget {
 
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Iconsax.arrow_right_34,
                       size: TSizes.iconSm,
                     ),
                   ),
                 ],
               ),
-              SizedBox(height: TSizes.spaceBtwItems),
+              const SizedBox(height: TSizes.spaceBtwItems),
               // row 2
               Row(
                 children: [
@@ -69,7 +67,7 @@ class OrderList extends StatelessWidget {
                     child: Row(
                       children: [
                         const Icon(Iconsax.tag),
-                        SizedBox(width: TSizes.spaceBtwItems / 2),
+                        const SizedBox(width: TSizes.spaceBtwItems / 2),
                         Expanded(
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
@@ -91,7 +89,7 @@ class OrderList extends StatelessWidget {
                     child: Row(
                       children: [
                         const Icon(Iconsax.calendar),
-                        SizedBox(width: TSizes.spaceBtwItems / 2),
+                        const SizedBox(width: TSizes.spaceBtwItems / 2),
                         Expanded(
                           child: Column(
                             mainAxisSize: MainAxisSize.min,

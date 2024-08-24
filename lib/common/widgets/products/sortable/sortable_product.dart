@@ -14,7 +14,7 @@ class TSortableProduct extends StatelessWidget {
     return Column(
       children: [
         DropdownButtonFormField(
-          decoration: InputDecoration(prefixIcon: Icon(Iconsax.sort)),
+          decoration: const InputDecoration(prefixIcon: Icon(Iconsax.sort)),
           items: [
             'Name',
             'Higher Price',
@@ -33,7 +33,7 @@ class TSortableProduct extends StatelessWidget {
         GridLayout(
             itemCount: 10,
             itemBuilder: (_, index) {
-              return TProductCardVertical();
+              return const TProductCardVertical();
             })
       ],
     );

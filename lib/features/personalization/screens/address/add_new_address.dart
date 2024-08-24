@@ -9,41 +9,41 @@ class AddNewAddress extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: TAppBar(showBackArrow: true, title: Text('Add New Address')),
+      appBar: const TAppBar(showBackArrow: true, title: Text('Add New Address')),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(TSizes.defaultSpace),
           child: Form(
             child: Column(
               children: [
                 TextFormField(
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     prefixIcon: Icon(Iconsax.user),
                     label: Text('Name'),
                   ),
                 ),
-                SizedBox(height: TSizes.spaceBtwInputFields),
+                const SizedBox(height: TSizes.spaceBtwInputFields),
                 TextFormField(
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     prefixIcon: Icon(Iconsax.mobile),
                     label: Text('Phone Number'),
                   ),
                 ),
-                SizedBox(height: TSizes.spaceBtwInputFields),
+                const SizedBox(height: TSizes.spaceBtwInputFields),
                 Row(
                   children: [
                     Expanded(
                       child: TextFormField(
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           prefixIcon: Icon(Iconsax.building_31),
                           label: Text('Street'),
                         ),
                       ),
                     ),
-                    SizedBox(width: TSizes.spaceBtwInputFields),
+                    const SizedBox(width: TSizes.spaceBtwInputFields),
                     Expanded(
                       child: TextFormField(
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           prefixIcon: Icon(Iconsax.location),
                           label: Text('Pin Code '),
                         ),
@@ -51,21 +51,21 @@ class AddNewAddress extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: TSizes.spaceBtwInputFields),
+                const SizedBox(height: TSizes.spaceBtwInputFields),
                 Row(
                   children: [
                     Expanded(
                       child: TextFormField(
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           prefixIcon: Icon(Iconsax.building),
                           label: Text('City'),
                         ),
                       ),
                     ),
-                    SizedBox(width: TSizes.spaceBtwInputFields),
+                    const SizedBox(width: TSizes.spaceBtwInputFields),
                     Expanded(
                       child: TextFormField(
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           prefixIcon: Icon(Iconsax.location),
                           label: Text('State'),
                         ),
@@ -73,9 +73,9 @@ class AddNewAddress extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: TSizes.spaceBtwInputFields),
+                const SizedBox(height: TSizes.spaceBtwInputFields),
                 TextFormField(
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     prefixIcon: Icon(Iconsax.global),
                     label: Text('Country'),
                   ),
@@ -84,7 +84,7 @@ class AddNewAddress extends StatelessWidget {
                 SizedBox(
                     width: double.infinity,
                     child:
-                        ElevatedButton(onPressed: () {}, child: Text('Save')))
+                        ElevatedButton(onPressed: () {}, child: const Text('Save')))
               ],
             ),
           ),

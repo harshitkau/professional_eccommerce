@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:prof_ecommerce/common/widgets/custom_shapes/containers/circular_container.dart';
 import 'package:prof_ecommerce/common/widgets/products/cart/product_price_text.dart';
 import 'package:prof_ecommerce/common/widgets/texts/product_title_text.dart';
@@ -27,8 +25,8 @@ class TProductAttributes extends StatelessWidget {
               // title price and stock status
               Row(
                 children: [
-                  TSectionHeading(title: 'Variation', showActionButton: false),
-                  SizedBox(width: TSizes.spaceBtwItems),
+                  const TSectionHeading(title: 'Variation', showActionButton: false),
+                  const SizedBox(width: TSizes.spaceBtwItems),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -97,10 +95,10 @@ class TProductAttributes extends StatelessWidget {
             Wrap(
               children: [
                 TChoiceChip(text: 'EU 34', selected: true, onSeleted: (val) {}),
-                SizedBox(width: TSizes.spaceBtwItems / 2),
+                const SizedBox(width: TSizes.spaceBtwItems / 2),
                 TChoiceChip(
                     text: 'EU 36', selected: false, onSeleted: (val) {}),
-                SizedBox(width: TSizes.spaceBtwItems / 2),
+                const SizedBox(width: TSizes.spaceBtwItems / 2),
                 TChoiceChip(
                     text: 'EU 38', selected: false, onSeleted: (val) {}),
               ],

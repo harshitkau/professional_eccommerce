@@ -15,8 +15,8 @@ class TRatingAndShare extends StatelessWidget {
         Row(
           children: [
             // rating
-            Icon(Iconsax.star5, color: Colors.amber, size: 24),
-            SizedBox(width: TSizes.spaceBtwItems / 2),
+            const Icon(Iconsax.star5, color: Colors.amber, size: 24),
+            const SizedBox(width: TSizes.spaceBtwItems / 2),
             Text.rich(
               TextSpan(
                 children: [
@@ -34,7 +34,7 @@ class TRatingAndShare extends StatelessWidget {
         // share button
         IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.share,
               size: TSizes.iconMd,
             ))

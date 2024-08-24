@@ -18,7 +18,7 @@ class UserAddressScreen extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         backgroundColor: TColors.primary,
         onPressed: () {
-          Get.to(() => AddNewAddress());
+          Get.to(() => const AddNewAddress());
         },
         child: const Icon(
           Iconsax.add,
@@ -32,7 +32,7 @@ class UserAddressScreen extends StatelessWidget {
           style: Theme.of(context).textTheme.headlineSmall,
         ),
       ),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(TSizes.defaultSpace),
           child: Column(

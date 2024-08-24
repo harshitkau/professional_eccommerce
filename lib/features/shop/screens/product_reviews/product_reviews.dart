@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:prof_ecommerce/common/widgets/appbar/appbar.dart';
 import 'package:prof_ecommerce/common/widgets/products/rating/t_rating_bar_indicator.dart';
 import 'package:prof_ecommerce/features/shop/screens/product_reviews/widget/t_overall_product_rating.dart';
@@ -13,31 +11,31 @@ class ProductReviewScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: TAppBar(
+      appBar: const TAppBar(
         title: Text('Reviews & Rating'),
         showBackArrow: true,
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(TSizes.defaultSpace),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                   "Rating and review are verified and are from people who use the same type of device the you are used"),
 
               // overall product rating
               const TOverallProductRating(),
-              TRatingBarIndicator(rating: 3),
+              const TRatingBarIndicator(rating: 3),
               Text(
                 '12,526',
                 style: Theme.of(context).textTheme.bodySmall,
               ),
               const SizedBox(height: TSizes.spaceBtwSections),
               // user  review list
-              UserReviewCard(),
-              UserReviewCard(),
-              UserReviewCard(),
+              const UserReviewCard(),
+              const UserReviewCard(),
+              const UserReviewCard(),
             ],
           ),
         ),

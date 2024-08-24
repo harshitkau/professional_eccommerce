@@ -14,7 +14,7 @@ class TLoaders {
       backgroundColor: Colors.orange,
       snackPosition: SnackPosition.BOTTOM,
       duration: const Duration(seconds: 3),
-      margin: EdgeInsets.all(20),
+      margin: const EdgeInsets.all(20),
       icon: const Icon(
         Iconsax.warning_2,
         color: TColors.white,
@@ -32,7 +32,7 @@ class TLoaders {
       backgroundColor: TColors.primary,
       snackPosition: SnackPosition.BOTTOM,
       duration: const Duration(seconds: 3),
-      margin: EdgeInsets.all(20),
+      margin: const EdgeInsets.all(20),
       icon: const Icon(
         Iconsax.check,
         color: TColors.white,
@@ -50,7 +50,7 @@ class TLoaders {
       backgroundColor: Colors.red,
       snackPosition: SnackPosition.BOTTOM,
       duration: const Duration(seconds: 3),
-      margin: EdgeInsets.all(20),
+      margin: const EdgeInsets.all(20),
       icon: const Icon(
         Iconsax.warning_2,
         color: TColors.white,

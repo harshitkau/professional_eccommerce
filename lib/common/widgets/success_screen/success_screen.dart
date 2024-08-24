@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:prof_ecommerce/common/styles/spacing_style.dart';
-import 'package:prof_ecommerce/common/widgets/loaders/animation_loader.dart';
 import 'package:prof_ecommerce/utils/constants/image_strings.dart';
 import 'package:prof_ecommerce/utils/constants/sizes.dart';
 import 'package:prof_ecommerce/utils/constants/text_strings.dart';

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:prof_ecommerce/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:prof_ecommerce/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:prof_ecommerce/common/widgets/layout/grid_layout.dart';
@@ -59,7 +58,7 @@ class HomeScreen extends StatelessWidget {
                   const SizedBox(height: TSizes.spaceBtwSections),
                   TSectionHeading(
                       title: 'Popular Products',
-                      onPressed: () => Get.to(() => AllProduct())),
+                      onPressed: () => Get.to(() => const AllProduct())),
                   const SizedBox(height: TSizes.spaceBtwSections),
                   // popular product
                   GridLayout(

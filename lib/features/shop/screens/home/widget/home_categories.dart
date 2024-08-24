@@ -36,7 +36,7 @@ class THomeCategories extends StatelessWidget {
                 return TVerticalImage(
                   image: TImages.shoeIcon,
                   title: 'Shoes',
-                  onTap: () => Get.to(() => SubCategory()),
+                  onTap: () => Get.to(() => const SubCategory()),
                 );
               },
             ),

@@ -94,7 +94,7 @@ class AuthenticationRepository extends GetxController {
   Future<void> logout() async {
     try {
       await FirebaseAuth.instance.signOut();
-      Get.offAll(() => LoginScreen());
+      Get.offAll(() => const LoginScreen());
     } on TFirebaseAuthException catch (e) {
       throw TFirebaseAuthException(e.code).message;
     } on TFirebaseException catch (e) {

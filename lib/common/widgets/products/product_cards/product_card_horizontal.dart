@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:prof_ecommerce/common/widgets/custom_shapes/containers/circular_container.dart';
@@ -30,12 +29,12 @@ class TProductCardHorizontal extends StatelessWidget {
           // thumbnails
           TRoundedContainer(
             height: 120,
-            padding: EdgeInsets.all(TSizes.sm),
+            padding: const EdgeInsets.all(TSizes.sm),
             backgroundColor: dark ? TColors.dark : TColors.light,
             child: Stack(
               children: [
                 // thumbnails image
-                SizedBox(
+                const SizedBox(
                   height: 120,
                   width: 120,
                   child: TRoundedImage(
@@ -77,10 +76,10 @@ class TProductCardHorizontal extends StatelessWidget {
           SizedBox(
             width: 172,
             child: Padding(
-              padding: EdgeInsets.only(top: TSizes.sm, left: TSizes.sm),
+              padding: const EdgeInsets.only(top: TSizes.sm, left: TSizes.sm),
               child: Column(
                 children: [
-                  Column(
+                  const Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       TProductTitleText(
@@ -90,11 +89,11 @@ class TProductCardHorizontal extends StatelessWidget {
                       TBranchTitleWithVerifiedIcon(title: 'Nike')
                     ],
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Flexible(
+                      const Flexible(
                         child: ProductPriceText(price: '199'),
                       ),
                       // add to cart

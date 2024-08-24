@@ -13,7 +13,7 @@ class OrderScreen extends StatelessWidget {
         title:
             Text('My Orders', style: Theme.of(context).textTheme.headlineSmall),
       ),
-      body: Padding(
+      body: const Padding(
         padding: EdgeInsets.all(TSizes.defaultSpace),
         child: OrderList(),
       ),

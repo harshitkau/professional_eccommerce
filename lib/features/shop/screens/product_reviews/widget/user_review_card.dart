@@ -20,21 +20,21 @@ class UserReviewCard extends StatelessWidget {
           children: [
             Row(
               children: [
-                CircleAvatar(
+                const CircleAvatar(
                     backgroundImage: AssetImage(TImages.userProfileImage1)),
                 const SizedBox(width: TSizes.spaceBtwItems),
                 Text('Harshit Kaushal',
                     style: Theme.of(context).textTheme.titleLarge),
               ],
             ),
-            IconButton(onPressed: () {}, icon: Icon(Icons.more_vert))
+            IconButton(onPressed: () {}, icon: const Icon(Icons.more_vert))
           ],
         ),
-        SizedBox(height: TSizes.spaceBtwItems / 2),
+        const SizedBox(height: TSizes.spaceBtwItems / 2),
         // review
         Row(
           children: [
-            TRatingBarIndicator(rating: 4),
+            const TRatingBarIndicator(rating: 4),
             const SizedBox(width: TSizes.spaceBtwItems),
             Text(
               'Aug 10, 2024',
@@ -61,7 +61,7 @@ class UserReviewCard extends StatelessWidget {
         TRoundedContainer(
           backgroundColor: dark ? TColors.darkerGrey : TColors.grey,
           child: Padding(
-            padding: EdgeInsets.all(TSizes.md),
+            padding: const EdgeInsets.all(TSizes.md),
             child: Column(
               children: [
                 Row(

@@ -1,6 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:prof_ecommerce/utils/formatters/formatter.dart';
-import 'package:prof_ecommerce/utils/popup/loders.dart';
 
 class UserModel {
   // keep those value final which you do not want to update

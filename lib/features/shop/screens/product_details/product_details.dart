@@ -20,12 +20,12 @@ class ProductDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     // final dark = THelperFunctions.isDarkMode(context);
     return Scaffold(
-      bottomNavigationBar: TBottomAddToCart(),
+      bottomNavigationBar: const TBottomAddToCart(),
       body: SingleChildScrollView(
         child: Column(
           children: [
             // Product image slider
-            TProductImageSlider(),
+            const TProductImageSlider(),
 
             // product detials
             Padding(
@@ -37,21 +37,21 @@ class ProductDetails extends StatelessWidget {
               child: Column(
                 children: [
                   // rating share button
-                  TRatingAndShare(),
+                  const TRatingAndShare(),
 
                   // price, title and stock
-                  TProductMetaData(),
+                  const TProductMetaData(),
 
                   // attributes
-                  TProductAttributes(),
+                  const TProductAttributes(),
 
-                  SizedBox(height: TSizes.spaceBtwSections),
+                  const SizedBox(height: TSizes.spaceBtwSections),
 
                   // checkour button
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
-                        onPressed: () {}, child: Text('Checkout')),
+                        onPressed: () {}, child: const Text('Checkout')),
                   ),
 
                   const SizedBox(height: TSizes.spaceBtwSections),
@@ -79,13 +79,13 @@ class ProductDetails extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      TSectionHeading(
+                      const TSectionHeading(
                         title: 'Review (199)',
                         showActionButton: false,
                       ),
                       IconButton(
                           onPressed: () {
-                            Get.to(() => ProductReviewScreen());
+                            Get.to(() => const ProductReviewScreen());
                           },
                           icon: const Icon(Iconsax.arrow_right_3, size: 18)),
                     ],

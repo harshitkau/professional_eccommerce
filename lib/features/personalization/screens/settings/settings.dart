@@ -38,7 +38,7 @@ class SettingsScreen extends StatelessWidget {
 
                   // user profile card
                   TUserProfile(
-                    onTap: () => Get.to((() => ProfileScreen())),
+                    onTap: () => Get.to((() => const ProfileScreen())),
                   ),
 
                   const SizedBox(
@@ -61,17 +61,17 @@ class SettingsScreen extends StatelessWidget {
                   const SizedBox(height: TSizes.spaceBtwItems),
 
                   TSettingsMenuTile(
-                      onTap: () => Get.to(() => UserAddressScreen()),
+                      onTap: () => Get.to(() => const UserAddressScreen()),
                       icon: Iconsax.safe_home,
                       title: 'My Addresses',
                       subTitle: 'Set shopping delivery address'),
                   TSettingsMenuTile(
-                      onTap: () => Get.to(() => CartScreen()),
+                      onTap: () => Get.to(() => const CartScreen()),
                       icon: Iconsax.shopping_cart,
                       title: 'My Cart',
                       subTitle: 'Add, remove products and move to checkout'),
                   TSettingsMenuTile(
-                      onTap: () => Get.to(() => OrderScreen()),
+                      onTap: () => Get.to(() => const OrderScreen()),
                       icon: Iconsax.bag_tick,
                       title: 'My Orders',
                       subTitle: 'In-progress and Completed Orders'),

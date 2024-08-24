@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:prof_ecommerce/common/widgets/custom_shapes/containers/circular_container.dart';
 import 'package:prof_ecommerce/utils/constants/colors.dart';
@@ -16,7 +14,7 @@ class SingleAddress extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     return TRoundedContainer(
-      padding: EdgeInsets.all(TSizes.md),
+      padding: const EdgeInsets.all(TSizes.md),
       width: double.infinity,
       showBorder: true,
       backgroundColor: selectedAddress
@@ -49,11 +47,11 @@ class SingleAddress extends StatelessWidget {
                   style: Theme.of(context).textTheme.titleLarge,
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis),
-              SizedBox(height: TSizes.sm / 2),
+              const SizedBox(height: TSizes.sm / 2),
               const Text('+91 8726558201',
                   maxLines: 1, overflow: TextOverflow.ellipsis),
               const SizedBox(height: TSizes.sm / 2),
-              Text(
+              const Text(
                 'N-Block JJ Colony Nand Vihar, Dwarka Delhi 110078',
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,

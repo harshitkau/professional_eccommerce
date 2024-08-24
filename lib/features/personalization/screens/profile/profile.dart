@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:prof_ecommerce/common/widgets/appbar/appbar.dart';
 import 'package:prof_ecommerce/common/widgets/images/circular_image.dart';
@@ -25,16 +23,16 @@ class ProfileScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(TSizes.defaultSpace),
           child: Column(
             children: [
               SizedBox(
                 width: double.infinity,
                 child: Column(
                   children: [
-                    TCircularImage(image: TImages.user, width: 80, height: 80),
+                    const TCircularImage(image: TImages.user, width: 80, height: 80),
                     TextButton(
-                        onPressed: () {}, child: Text('Change Profile Picture'))
+                        onPressed: () {}, child: const Text('Change Profile Picture'))
                   ],
                 ),
               ),
@@ -48,15 +46,15 @@ class ProfileScreen extends StatelessWidget {
               TProfileMenu(
                   onPressed: () {}, title: 'UserName', value: 'harshitk002'),
 
-              SizedBox(height: TSizes.spaceBtwItems),
-              Divider(),
-              SizedBox(height: TSizes.spaceBtwItems),
+              const SizedBox(height: TSizes.spaceBtwItems),
+              const Divider(),
+              const SizedBox(height: TSizes.spaceBtwItems),
 
               // Heading personal info
-              TSectionHeading(
+              const TSectionHeading(
                   title: 'Personal Information', showActionButton: false),
 
-              SizedBox(height: TSizes.spaceBtwItems),
+              const SizedBox(height: TSizes.spaceBtwItems),
 
               TProfileMenu(
                 onPressed: () {},
@@ -79,7 +77,7 @@ class ProfileScreen extends StatelessWidget {
                   value: '27 April 2001'),
 
               const Divider(),
-              SizedBox(height: TSizes.spaceBtwItems),
+              const SizedBox(height: TSizes.spaceBtwItems),
               Center(
                 child: Container(
                   width: TDeviceUtils.getScreenWidth(context),
@@ -88,7 +86,7 @@ class ProfileScreen extends StatelessWidget {
                       border: Border.all(color: Colors.red)),
                   child: TextButton(
                     onPressed: () {},
-                    child: Text('Close Account',
+                    child: const Text('Close Account',
                         style: TextStyle(
                           color: Colors.red,
                         )),

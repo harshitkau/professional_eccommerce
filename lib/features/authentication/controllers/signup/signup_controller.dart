@@ -1,7 +1,5 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_rx/get_rx.dart';
 import 'package:prof_ecommerce/data/repositories/authentication_repository.dart';
 import 'package:prof_ecommerce/data/user/user_repository.dart';
 import 'package:prof_ecommerce/features/authentication/models/user_model.dart';

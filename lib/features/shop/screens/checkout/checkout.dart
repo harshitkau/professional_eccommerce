@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:prof_ecommerce/common/widgets/appbar/appbar.dart';
 import 'package:prof_ecommerce/common/widgets/custom_shapes/containers/circular_container.dart';
@@ -33,15 +31,15 @@ class CheckoutScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(TSizes.defaultSpace),
           child: Column(
             children: [
               // items in cart
-              TCartItems(showAddRemoveButtons: false),
+              const TCartItems(showAddRemoveButtons: false),
               const SizedBox(height: TSizes.spaceBtwSections),
 
               // coupon textfield
-              TCouponCode(),
+              const TCouponCode(),
 
               const SizedBox(height: TSizes.spaceBtwSections),
 
@@ -55,7 +53,7 @@ class CheckoutScreen extends StatelessWidget {
                     TBillingPaymentSection(),
                     SizedBox(height: TSizes.spaceBtwItems),
                     // Divider
-                    const Divider(),
+                    Divider(),
                     SizedBox(height: TSizes.spaceBtwItems),
                     // Payment
                     TBillingAmountSection(),
@@ -71,17 +69,17 @@ class CheckoutScreen extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: Padding(
-        padding: EdgeInsets.all(TSizes.defaultSpace),
+        padding: const EdgeInsets.all(TSizes.defaultSpace),
         child: ElevatedButton(
           onPressed: () {
             Get.to(() => SuccessScreen(
                   image: TImages.successfulPaymentIcon,
                   title: 'Payment Succes!',
                   subTitle: 'Your item will be shipped soon!',
-                  onPressed: () => Get.offAll(() => NavigationMenu()),
+                  onPressed: () => Get.offAll(() => const NavigationMenu()),
                 ));
           },
-          child: Text('Checkout \u{20B9} 256'),
+          child: const Text('Checkout \u{20B9} 256'),
         ),
       ),
     );

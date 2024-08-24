@@ -12,7 +12,7 @@ class TCartItems extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
-      physics: BouncingScrollPhysics(),
+      physics: const BouncingScrollPhysics(),
       shrinkWrap: true,
       itemCount: 2,
       separatorBuilder: (_, __) {
@@ -24,13 +24,13 @@ class TCartItems extends StatelessWidget {
         return Column(
           children: [
             // cart item
-            TCartItem(),
+            const TCartItem(),
             if (showAddRemoveButtons)
               const SizedBox(height: TSizes.spaceBtwItems),
 
             // Add remove button row with total price
             if (showAddRemoveButtons)
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Row(
@@ -42,7 +42,7 @@ class TCartItems extends StatelessWidget {
                   ProductPriceText(price: '256')
                 ],
               ),
-            SizedBox(height: TSizes.spaceBtwItems),
+            const SizedBox(height: TSizes.spaceBtwItems),
           ],
         );
       },

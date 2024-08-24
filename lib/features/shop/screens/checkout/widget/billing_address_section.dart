@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:prof_ecommerce/common/widgets/texts/section_heading.dart';
 import 'package:prof_ecommerce/utils/constants/sizes.dart';
 

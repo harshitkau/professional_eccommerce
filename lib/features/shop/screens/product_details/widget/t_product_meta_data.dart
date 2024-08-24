@@ -46,8 +46,8 @@ class TProductMetaData extends StatelessWidget {
                   .titleSmall!
                   .apply(decoration: TextDecoration.lineThrough),
             ),
-            SizedBox(width: TSizes.spaceBtwItems),
-            ProductPriceText(price: '150', isLarge: true),
+            const SizedBox(width: TSizes.spaceBtwItems),
+            const ProductPriceText(price: '150', isLarge: true),
           ],
         ),
         const SizedBox(height: TSizes.spaceBtwItems / 1.5),
@@ -75,7 +75,7 @@ class TProductMetaData extends StatelessWidget {
               width: 32,
               image: TImages.nikeLogo,
             ),
-            TBranchTitleWithVerifiedIcon(
+            const TBranchTitleWithVerifiedIcon(
               title: 'Nike',
               brandTextSizes: TextSizes.medium,
             ),

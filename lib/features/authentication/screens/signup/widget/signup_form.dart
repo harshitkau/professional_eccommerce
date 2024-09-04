@@ -87,7 +87,7 @@ class TSignUpForm extends StatelessWidget {
                   labelText: TTexts.password,
                   prefixIcon: const Icon(Iconsax.password_check),
                   suffixIcon: IconButton(
-                    icon: !controller.hidePassword.value
+                    icon: controller.hidePassword.value
                         ? const Icon(Iconsax.eye_slash)
                         : const Icon(Iconsax.eye),
                     onPressed: () => controller.hidePassword.value =
@@ -96,6 +96,7 @@ class TSignUpForm extends StatelessWidget {
                 ),
               ),
             ),
+
             const SizedBox(height: TSizes.spaceBtwItems),
             // terms & condition checkboxes
             const TermAndConditionCheckbox(),

@@ -36,23 +36,27 @@ class TPromoSlider extends StatelessWidget {
         ),
         const SizedBox(height: TSizes.spaceBtwItems),
         Center(
-          child: Obx(() => Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  for (int i = 0; i < banners.length; i++)
-                    TRoundedContainer(
-                      width: 20,
-                      height: 4,
-                      backgroundColor:
-                          controller.carouselCurrentIndex.value == i
-                              ? TColors.primary
-                              : TColors.grey,
-                      margin: const EdgeInsets.only(right: 8),
-                    )
-                ],
-              )),
+          child: Obx(
+            () => Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+              for (int i = 0; i < banners.length; i++)
+                TRoundedContainer(
+                  width: 20,
+                  height: 4,
+                  backgroundColor: controller.carouselCurrentIndex.value == i
+                      ? TColors.primary
+                      : TColors.grey,
+                  margin: const EdgeInsets.only(right: 8),
+                )
+            ]),
+          ),
         ),
       ],
     );
   }
 }
+// Row(
+//                 mainAxisSize: MainAxisSize.min,
+//                 children: [
+                  
+//                 ],
+//               )

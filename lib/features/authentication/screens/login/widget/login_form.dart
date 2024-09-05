@@ -4,7 +4,6 @@ import 'package:iconsax/iconsax.dart';
 import 'package:prof_ecommerce/features/authentication/controllers/login/login_controller.dart';
 import 'package:prof_ecommerce/features/authentication/screens/password_configuration/forgot_password.dart';
 import 'package:prof_ecommerce/features/authentication/screens/signup/signup.dart';
-import 'package:prof_ecommerce/navigation_menu.dart';
 import 'package:prof_ecommerce/utils/constants/sizes.dart';
 import 'package:prof_ecommerce/utils/constants/text_strings.dart';
 import 'package:prof_ecommerce/utils/validators/validation.dart';
@@ -37,14 +36,14 @@ class TLoginForm extends StatelessWidget {
             // password
             Obx(
               () => TextFormField(
-                validator: (value) => TValidator.validateEmail(value),
+                validator: (value) => TValidator.validatePassword(value),
                 controller: controller.password,
-                obscureText: !controller.hidePassword.value,
+                obscureText: controller.hidePassword.value,
                 decoration: InputDecoration(
                   labelText: TTexts.password,
                   prefixIcon: const Icon(Iconsax.password_check),
                   suffixIcon: IconButton(
-                    icon: !controller.hidePassword.value
+                    icon: controller.hidePassword.value
                         ? const Icon(Iconsax.eye_slash)
                         : const Icon(Iconsax.eye),
                     onPressed: () => controller.hidePassword.value =
@@ -86,11 +85,12 @@ class TLoginForm extends StatelessWidget {
                   onPressed: () {
                     // print(controller.email);
                     // print(controller.password);
-                    // print(controller.rememberMe.value);
+                    print(controller.rememberMe.value);
                     controller.emailAndPasswordSignIn();
                   },
                   child: const Text(TTexts.signIn)),
             ),
+
             const SizedBox(height: TSizes.spaceBtwItems),
             // create account button
             SizedBox(

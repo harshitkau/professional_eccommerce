@@ -29,11 +29,11 @@ class UserModel {
   String get formattedPhoneNumber => TFormatter.formatPhoneNumber(phoneNumber);
 
   // static function to split full name into first and last name
-  static List<String> nameParts(fullName) => fullName.split('');
+  static List<String> nameParts(fullName) => fullName.split(' ');
 
   // static functio to generate a user nmae from the full name
   static String generateUserName(fullName) {
-    List<String> nameParts = fullName.split('');
+    List<String> nameParts = fullName.split(' ');
     String firstName = nameParts[0].toLowerCase();
     String lastName = nameParts.length > 1 ? nameParts[1].toLowerCase() : "";
     String camelCaseUsrname = "$firstName$lastName";

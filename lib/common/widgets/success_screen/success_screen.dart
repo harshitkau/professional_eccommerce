@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:prof_ecommerce/common/styles/spacing_style.dart';
-import 'package:prof_ecommerce/utils/constants/image_strings.dart';
 import 'package:prof_ecommerce/utils/constants/sizes.dart';
 import 'package:prof_ecommerce/utils/constants/text_strings.dart';
 import 'package:prof_ecommerce/utils/helpers/helper_functions.dart';
@@ -33,7 +32,7 @@ class SuccessScreen extends StatelessWidget {
                   ? Image(
                       image: AssetImage(image),
                       width: THelperFunctions.screenWidth() * 0.6)
-                  : Lottie.asset(TImages.successfullyRegistrationAnimation,
+                  : Lottie.asset(image,
                       width: MediaQuery.of(context).size.width * 0.8),
 
               const SizedBox(height: TSizes.spaceBtwSections),

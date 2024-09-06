@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:prof_ecommerce/common/widgets/images/circular_image.dart';
+import 'package:prof_ecommerce/features/personalization/controllers/user_controller.dart';
 import 'package:prof_ecommerce/utils/constants/colors.dart';
 import 'package:prof_ecommerce/utils/constants/image_strings.dart';
 
-class TUserProfile extends StatelessWidget {
-  const TUserProfile({
+class TUserProfileTile extends StatelessWidget {
+  const TUserProfileTile({
     super.key,
     this.onTap,
   });
@@ -14,6 +15,7 @@ class TUserProfile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = UserController.instance;
     return ListTile(
       leading: const TCircularImage(
         image: TImages.user,
@@ -23,14 +25,14 @@ class TUserProfile extends StatelessWidget {
         fit: BoxFit.cover,
       ),
       title: Text(
-        'Harshit Kaushal',
+        controller.user.value.fullName,
         style: Theme.of(context)
             .textTheme
             .headlineSmall!
             .apply(color: TColors.white),
       ),
       subtitle: Text(
-        'harshitkaushal17@gmail.com',
+        controller.user.value.email,
         style:
             Theme.of(context).textTheme.bodyMedium!.apply(color: TColors.white),
       ),

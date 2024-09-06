@@ -38,7 +38,7 @@ class SettingsScreen extends StatelessWidget {
                   ),
 
                   // user profile card
-                  TUserProfile(
+                  TUserProfileTile(
                     onTap: () => Get.to((() => const ProfileScreen())),
                   ),
 

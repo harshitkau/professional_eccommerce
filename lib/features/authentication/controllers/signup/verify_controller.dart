@@ -40,6 +40,7 @@ class VerifyEmailController extends GetxController {
         timer.cancel();
         Get.off(
           () => SuccessScreen(
+            isAnimation: true,
             image: TImages.successfullyRegistrationAnimation,
             title: TTexts.yourAccountCreatedTitle,
             subTitle: TTexts.yourAccountCreatedSubTitle,
@@ -56,6 +57,7 @@ class VerifyEmailController extends GetxController {
     if (currentUser != null && currentUser.emailVerified) {
       Get.off(
         () => SuccessScreen(
+          isAnimation: true,
           image: TImages.successfullyRegistrationAnimation,
           title: TTexts.yourAccountCreatedTitle,
           subTitle: TTexts.yourAccountCreatedSubTitle,

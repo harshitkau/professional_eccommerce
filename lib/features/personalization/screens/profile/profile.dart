@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:prof_ecommerce/common/widgets/appbar/appbar.dart';
 import 'package:prof_ecommerce/common/widgets/images/circular_image.dart';
+import 'package:prof_ecommerce/common/widgets/shimmer_effect/shimmer_effect.dart';
 import 'package:prof_ecommerce/common/widgets/texts/section_heading.dart';
 import 'package:prof_ecommerce/features/personalization/controllers/user_controller.dart';
 import 'package:prof_ecommerce/features/personalization/screens/profile/widget/change_name.dart';
@@ -35,10 +36,24 @@ class ProfileScreen extends StatelessWidget {
                 width: double.infinity,
                 child: Column(
                   children: [
-                    const TCircularImage(
-                        image: TImages.user, width: 80, height: 80),
+                    Obx(() {
+                      final networkImage = controller.user.value.profilePicture;
+                      final image =
+                          networkImage.isNotEmpty ? networkImage : TImages.user;
+                      return controller.imageUploading.value
+                          ? const TShimmerEffect(
+                              width: 80,
+                              height: 80,
+                              radius: 80,
+                            )
+                          : TCircularImage(
+                              isNetworkImage: networkImage.isNotEmpty,
+                              image: image,
+                              width: 80,
+                              height: 80);
+                    }),
                     TextButton(
-                        onPressed: () {},
+                        onPressed: () => controller.uploadUserProfilePicture(),
                         child: const Text('Change Profile Picture'))
                   ],
                 ),
@@ -98,7 +113,7 @@ class ProfileScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                       border: Border.all(color: Colors.red)),
                   child: TextButton(
-                    onPressed: ()=>controller.deleteAccountWarningPopup(),
+                    onPressed: () => controller.deleteAccountWarningPopup(),
                     child: const Text('Close Account',
                         style: TextStyle(
                           color: Colors.red,

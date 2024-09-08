@@ -5,7 +5,7 @@ import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:prof_ecommerce/data/user/user_repository.dart';
+import 'package:prof_ecommerce/data/repositories/user/user_repository.dart';
 import 'package:prof_ecommerce/features/authentication/screens/login/login_screen.dart';
 import 'package:prof_ecommerce/features/authentication/screens/onboarding/onboarding.dart';
 import 'package:prof_ecommerce/features/authentication/screens/signup/verify_email.dart';

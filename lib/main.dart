@@ -6,7 +6,7 @@ import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:prof_ecommerce/app.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:prof_ecommerce/data/repositories/authentication_repository.dart';
+import 'package:prof_ecommerce/data/repositories/authentication/authentication_repository.dart';
 import 'firebase_options.dart';
 
 Future<void> main() async {

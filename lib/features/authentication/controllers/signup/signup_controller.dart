@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:prof_ecommerce/data/repositories/authentication_repository.dart';
-import 'package:prof_ecommerce/data/user/user_repository.dart';
+import 'package:prof_ecommerce/data/repositories/authentication/authentication_repository.dart';
+import 'package:prof_ecommerce/data/repositories/user/user_repository.dart';
 import 'package:prof_ecommerce/features/authentication/models/user_model.dart';
 import 'package:prof_ecommerce/features/authentication/screens/signup/verify_email.dart';
 import 'package:prof_ecommerce/utils/constants/image_strings.dart';

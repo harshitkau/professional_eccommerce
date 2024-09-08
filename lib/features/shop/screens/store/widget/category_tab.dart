@@ -3,11 +3,13 @@ import 'package:prof_ecommerce/common/widgets/brands/brand_showcase.dart';
 import 'package:prof_ecommerce/common/widgets/layout/grid_layout.dart';
 import 'package:prof_ecommerce/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:prof_ecommerce/common/widgets/texts/section_heading.dart';
+import 'package:prof_ecommerce/features/shop/models/category_model.dart';
 import 'package:prof_ecommerce/utils/constants/image_strings.dart';
 import 'package:prof_ecommerce/utils/constants/sizes.dart';
 
 class CategoryTab extends StatelessWidget {
-  const CategoryTab({super.key});
+  const CategoryTab({super.key, required this.category});
+  final CategoryModel category;
 
   @override
   Widget build(BuildContext context) {

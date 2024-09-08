@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:prof_ecommerce/data/repositories/authentication_repository.dart';
+import 'package:prof_ecommerce/data/repositories/authentication/authentication_repository.dart';
 import 'package:prof_ecommerce/features/authentication/controllers/signup/verify_controller.dart';
 import 'package:prof_ecommerce/utils/constants/image_strings.dart';
 import 'package:prof_ecommerce/utils/constants/sizes.dart';

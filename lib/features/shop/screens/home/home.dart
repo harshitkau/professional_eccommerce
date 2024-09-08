@@ -34,6 +34,16 @@ class HomeScreen extends StatelessWidget {
                   ),
                   SizedBox(height: TSizes.spaceBtwSections),
                   // Categories
+                  Padding(
+                    padding:
+                        EdgeInsets.symmetric(horizontal: TSizes.defaultSpace),
+                    child: TSectionHeading(
+                      title: 'Popular Categories',
+                      showActionButton: false,
+                      textColor: Colors.white,
+                    ),
+                  ),
+                  const SizedBox(height: TSizes.spaceBtwItems),
                   THomeCategories(),
                   SizedBox(
                     height: TSizes.spaceBtwSections,

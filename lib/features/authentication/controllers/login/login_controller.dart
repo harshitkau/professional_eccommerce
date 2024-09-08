@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:prof_ecommerce/data/repositories/authentication_repository.dart';
+import 'package:prof_ecommerce/data/repositories/authentication/authentication_repository.dart';
 import 'package:prof_ecommerce/features/personalization/controllers/user_controller.dart';
 import 'package:prof_ecommerce/utils/constants/image_strings.dart';
 import 'package:prof_ecommerce/utils/network_manager/network_manager.dart';

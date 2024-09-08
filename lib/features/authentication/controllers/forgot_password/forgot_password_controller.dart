@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
-import 'package:prof_ecommerce/data/repositories/authentication_repository.dart';
+import 'package:prof_ecommerce/data/repositories/authentication/authentication_repository.dart';
 import 'package:prof_ecommerce/features/authentication/screens/password_configuration/reset_password.dart';
 import 'package:prof_ecommerce/utils/constants/image_strings.dart';
 import 'package:prof_ecommerce/utils/network_manager/network_manager.dart';

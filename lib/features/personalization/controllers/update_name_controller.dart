@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
-import 'package:prof_ecommerce/data/user/user_repository.dart';
+import 'package:prof_ecommerce/data/repositories/user/user_repository.dart';
 import 'package:prof_ecommerce/features/personalization/controllers/user_controller.dart';
 import 'package:prof_ecommerce/features/personalization/screens/profile/profile.dart';
 import 'package:prof_ecommerce/utils/constants/image_strings.dart';

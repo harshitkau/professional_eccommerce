@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:prof_ecommerce/utils/constants/colors.dart';
+import 'package:prof_ecommerce/common/widgets/images/circular_image.dart';
+
 import 'package:prof_ecommerce/utils/constants/sizes.dart';
-import 'package:prof_ecommerce/utils/helpers/helper_functions.dart';
 
 class TVerticalImage extends StatelessWidget {
   const TVerticalImage({
@@ -11,8 +11,9 @@ class TVerticalImage extends StatelessWidget {
     this.textColor = Colors.white,
     this.backgroundColor,
     this.onTap,
+    this.isNetworkImage = true,
   });
-
+  final isNetworkImage;
   final String image, title;
   final Color textColor;
   final Color? backgroundColor;
@@ -20,28 +21,21 @@ class TVerticalImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
     return GestureDetector(
       onTap: onTap,
       child: Padding(
         padding: const EdgeInsets.only(right: TSizes.spaceBtwItems),
         child: Column(
           children: [
-            Container(
-              width: 56,
-              height: 56,
-              padding: const EdgeInsets.all(TSizes.sm),
-              decoration: BoxDecoration(
-                  color:
-                      backgroundColor ?? (dark ? TColors.black : TColors.white),
-                  borderRadius: BorderRadius.circular(56)),
-              child: Center(
-                child: Image(
-                  image: AssetImage(image),
-                  fit: BoxFit.cover,
-                  color: dark ? TColors.white : TColors.black,
-                ),
-              ),
+            TCircularImage(
+              isNetworkImage: true,
+              image: image,
+              fit: BoxFit.cover,
+              padding: TSizes.sm * 1.4,
+              backgroundColor: backgroundColor,
+              // overLayColor: THelperFunctions.isDarkMode(context)
+              //     ? TColors.light
+              //     : TColors.dark,
             ),
             const SizedBox(height: TSizes.spaceBtwItems / 2),
             SizedBox(
@@ -54,6 +48,7 @@ class TVerticalImage extends StatelessWidget {
                     .apply(color: textColor),
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
+                textAlign: TextAlign.center,
               ),
             )
           ],

@@ -6,7 +6,7 @@ import 'package:prof_ecommerce/common/widgets/custom_shapes/containers/primary_h
 import 'package:prof_ecommerce/common/widgets/list_tile/settings_menu_tile.dart';
 import 'package:prof_ecommerce/common/widgets/list_tile/user_profile_tile.dart';
 import 'package:prof_ecommerce/common/widgets/texts/section_heading.dart';
-import 'package:prof_ecommerce/data/repositories/authentication_repository.dart';
+import 'package:prof_ecommerce/data/repositories/authentication/authentication_repository.dart';
 import 'package:prof_ecommerce/features/personalization/screens/address/address.dart';
 import 'package:prof_ecommerce/features/personalization/screens/profile/profile.dart';
 import 'package:prof_ecommerce/features/shop/screens/cart/cart_screen.dart';
